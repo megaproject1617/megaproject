@@ -23,7 +23,7 @@ class CartController < ApplicationController
   end
       
   def index
-    if sesssion[:cart] then
+    if session[:cart] then
       @cart = session[:cart]
     else
       @cart = {}
